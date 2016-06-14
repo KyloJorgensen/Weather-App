@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<form class="input">
+				<input type="text" class="search-term" name="query" autofocus placeholder="City state contry, longgitude latatude">
+			</form>
+			<div class="today">
+				<div class="current-weather-img"></div>
+				<div class="place"></div>
+			</div>
+			
+		</header>
+		<main>
+			<div class="hour">
+				<dt class="date"></dt>
+				<dt class="time">Time</dt>
+				<dt class="temp">Temperature</dt>
+				<dt class="humidity">Humidity</dt>
+				<dt class="chance-of-weather">chance</dt>
+			</div>
+		</main>
+
+		<footer>
+			<div class="days-container">
+				<ul class="days">
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
