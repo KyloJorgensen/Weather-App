@@ -2,6 +2,8 @@ $(document).ready(function() {
 	'use strict';
 	var result = {};
 	getRequest('New+York');
+	geoFindMe();
+
 	$(function(){
 		$('form').submit(function() {
 			event.preventDefault();
@@ -17,6 +19,7 @@ $(document).ready(function() {
 			num_of_days: 15,
 			showlocaltime: 'yes',
 			showmap: 'yes',
+			tp: 1,
 			format: 'json'
 		},
 			url = "https://api.worldweatheronline.com/premium/v1/weather.ashx";
@@ -58,6 +61,7 @@ $(document).ready(function() {
 		$.each(result.weather, function(index, value) {
 			showDays(value);
 		});
+		themedBackground(result.time_zone[0].localtime);
 	}
 
 	function showHours(result, dayNum) {
@@ -87,6 +91,39 @@ $(document).ready(function() {
 	function showDays(value) {
 		$('.days').append('<li><button>' + value.date + '</button></li>');
 	}
+
+	function themedBackground(dateandtime) {
+		var splited = dateandtime.split(" "),
+			time = splited[1].split(":"),
+			hour = Number(time[0]),
+			night = result.data.weather[0].astronomy[0].moonrise.split(":"),
+			morning = result.data.weather[0].astronomy[0].sunrise.split(":");
+			night = Number(night[0]) + 12;
+			morning = Number(morning[0]);
+		if (hour >= morning && hour <= night) {
+			$('body').css("background-color", "#96B4E4");
+			$('.container').css("background-color", "#FCEE21");
+		}
+		else {
+			$('body').css("background-color", "#3C4A90");
+			$('.container').css("background-color", "#FFFDEE");
+		}
+	}
+
+	function geoFindMe() {
+        var output = document.getElementById("out");
+
+        if (!navigator.geolocation) {
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            getRequest(latitude + ',' + longitude);
+        }, function(error) {
+        });
+    }
 
 	$('footer').on('click', 'button', function() {
 		showNewDay($(this).html());
