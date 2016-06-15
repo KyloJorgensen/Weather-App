@@ -2,7 +2,7 @@ body {
 	background-color: #3C4A90;
 }
 .container {
-	min-width: 650px;
+	width: 1200px;
 	position:absolute;
   	left:50%;
   	transform: translateX(-50%);
@@ -17,9 +17,7 @@ header {
 	margin-bottom: 10px;
 }
 
-
-
-.input {
+.input-form {
 	margin: 10px auto;
 	margin-top: 25px;
 	width: 400px;
@@ -59,47 +57,47 @@ h3 {
 }
 
 main {
-	padding-left: 15px;
 }
 
-.referances {
-	position: relative;
-	top: 0;
+main ul {
+	list-style: none;
+	
+	padding: 0;
+	margin: 0;
 }
 
-dt {
-	width: 130px;
+main li {
+	display: inline-block;
 }
 
+.referance {
+	width: 8%;
+}
+
+.temporary {
+	width: 3.8%;
+}
 
 .hour-img {
-	width: 62px;
-	position: relative;
-        top: 25px;
+	width: 100%;
 }
 
-.hour > * {
-	display: inline-block;
-	text-align: center;
-}
-
-.date {
-	margin: 0px -12px;
-	width: 80px;
+main p {
+	margin-bottom: 0;
 }
 
 footer {
-	max-width: 650px;
 	padding-top: 15px;
 }
 
-ul {
+footer ul {
 	list-style: none;
 }
 
-li {
+footer li {
 	display: inline-block;
 }
+
 
 button {
 	height: 32px;

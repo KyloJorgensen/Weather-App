@@ -10,7 +10,7 @@
 <body>
 	<div class="container">
 		<header>
-			<form class="input">
+			<form class="input-form">
 				<input type="text" class="search-term" name="query" autofocus placeholder="City Name">
 			</form>
 			<div class="today">
@@ -20,13 +20,46 @@
 			
 		</header>
 		<main>
-			<div class="hour referances">
-				<dt class="date"></dt>
-				<dt class="time">Time</dt>
-				<dt class="temp">Temperature</dt>
-				<dt class="humidity">Humidity</dt>
-				<dt class="chance-of-weather">chance</dt>
-			</div>
+			<ul class="img">
+				<li class="referance">
+					<p class="date">June 14 2016</p>
+				</li>
+				<li class="temporary">
+					<img class="hour-img" src="http://cdn.worldweatheronline.net/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png">
+				</li>
+			</ul>
+			<ul class="time">
+				<li class="referance">
+					<p>Time</p>
+				</li>
+				<li class="temporary">
+					<p>0000</p>
+				</li>
+			</ul>
+			<ul class="temperature">
+				<li class="referance">
+					<p>Temperature</p>
+				</li>
+				<li class="temporary">
+					<p>00F/00C</p>
+				</li>
+			</ul>
+			<ul class="humidity">
+				<li class="referance">
+					<p">humidity</p>
+				</li>
+				<li class="temporary">
+					<p>000%</p>
+				</li>
+			</ul>
+			<ul class="chance-of-weather">
+				<li class="referance">
+					<p class="">chance</p>
+				</li>
+				<li class="temporary">
+					<p>000%</p>
+				</li>
+			</ul>
 		</main>
 
 		<footer>

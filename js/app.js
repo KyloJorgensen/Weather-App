@@ -54,7 +54,6 @@ $(document).ready(function() {
 		$('.place').html('<h1>' + result.request[0].query + '</h2><h3> Date ' + result.time_zone[0].localtime +
 		 	'</h3><h3>Temperature ' + result.current_condition[0].temp_F + 'F/' + result.current_condition[0].temp_C + 'C '
 		  	+ result.current_condition[0].weatherDesc[0].value + '</h3>')
-		$('.temporary').remove();
 		var dayNum = 0;
 		showHours(result, dayNum);
 		$('.days').empty()
@@ -65,6 +64,7 @@ $(document).ready(function() {
 	}
 
 	function showHours(result, dayNum) {
+		$('.temporary').remove();
 		$('.date').html(result.weather[dayNum].date);
 		$.each(result.weather[dayNum].hourly, function(index, value) {
 			showHour(value);
@@ -72,12 +72,11 @@ $(document).ready(function() {
 	}
 
 	function showHour(value) {
-			$('main').append('<div class="temporary hour"><img class="hour-img" src=' + value.weatherIconUrl[0].value + '>' + 
-				'<dt class="time">' + value.time + '</dt>' +
-				'<dt class="temp">' + value.tempF + 'F/' + value.tempC + 'C</dt>' +
-				'<dt class="humidity">' + value.humidity + '%</dt>' +
-				'<dt class="chance-of-weather">' + weatherType(value) + '</dt></div>'
-			);
+		$('.img').append('<li class="temporary"><img class="hour-img" src=' + value.weatherIconUrl[0].value + '><li>');
+		$('.time').append('<li class="temporary"><p>' + value.time + '</p>');
+		$('.temperature').append('<li class="temporary"><p>' + value.tempF + 'F / ' + value.tempC + 'C</p>');
+		$('.humidity').append('<li class="temporary"><p>' + value.humidity + '</p>');
+		$('.chance-of-weather').append('<li class="temporary"><p>' + weatherType(value) + '</p>');
 	}
 
 	function weatherType(value) {

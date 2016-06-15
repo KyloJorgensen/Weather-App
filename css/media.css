@@ -1,17 +1,28 @@
-@media screen and (max-width:649px) {
-   .container {
-      width: 100%;
-   }
-   dt,
-   .hour-img {
-      width: 20%;
-   }
+@media screen and (max-width:1225px){
+  	.container {
+      	width: 100%;
+   	}
+   	main ul {
+   		display: inline-block;
+	}
+
+	main li {
+		display: list-item;
+	}
+	.referance {
+		width: auto;
+	}
+	.temporary {
+		width: auto;
+	}
+	.hour-img {
+		width: 25%;
+	}
+
+@media screen and (max-width:640px){
+
 }
 
-@media screen and (max-width:640px) {
-
-}
-
-@media screen and (max-width:320px) {
+@media screen and (max-width:320px){
 
 }
