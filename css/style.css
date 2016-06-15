@@ -1,6 +1,7 @@
 body {
 	background-color: #3C4A90;
 }
+
 .container {
 	width: 1200px;
 	position:absolute;
@@ -9,8 +10,8 @@ body {
   	-webkit-transform: translateX(-50%);
 	background-color: #939393;
 	border: 0px solid black;
-        border-radius: 15px;
-        padding: 10px;
+	border-radius: 15px;
+	padding: 10px;
 }
 
 header {
@@ -26,10 +27,10 @@ header {
 input {
 	margin-top: 10px;
 	height: 42px;
-        width: 400px;
-        font-size: 32px;
-        border: 2px solid black;
-        border-radius: 15px;
+    width: 400px;
+    font-size: 32px;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
 .today{
@@ -43,7 +44,7 @@ input {
 img,
 button {
 	border: 0px solid black;
-        border-radius: 15px;
+    border-radius: 15px;
 }
 
 .current-weather-img {
@@ -61,7 +62,6 @@ main {
 
 main ul {
 	list-style: none;
-	
 	padding: 0;
 	margin: 0;
 }
@@ -84,6 +84,7 @@ main li {
 
 main p {
 	margin-bottom: 0;
+	-webkit-padding-start: 0px;
 }
 
 footer {

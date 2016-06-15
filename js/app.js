@@ -75,7 +75,7 @@ $(document).ready(function() {
 		$('.img').append('<li class="temporary"><img class="hour-img" src=' + value.weatherIconUrl[0].value + '><li>');
 		$('.time').append('<li class="temporary"><p>' + value.time + '</p>');
 		$('.temperature').append('<li class="temporary"><p>' + value.tempF + 'F / ' + value.tempC + 'C</p>');
-		$('.humidity').append('<li class="temporary"><p>' + value.humidity + '</p>');
+		$('.humidity').append('<li class="temporary"><p>' + value.humidity + '%</p>');
 		$('.chance-of-weather').append('<li class="temporary"><p>' + weatherType(value) + '</p>');
 	}
 
