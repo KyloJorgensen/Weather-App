@@ -1,0 +1,33 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "NPM Weather App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mkdir": "mkdir -p css",
+    "build": "npm run clean && npm run mkdir && npm run build:css",
+    "watch": "npm run watch:css",
+    "clean": "rm -rf css",
+    "build:css": "npm run clean:css && lessc --source-map less-css/index.less css/$npm_package_name.$npm_package_version.css",
+    "watch:css": "npm run build:css && chokidar 'less-css/**/*.less' -c 'npm run build:css'",
+    "clean:css": "rm -f css/$npm_package_name.$npm_package_version.css css/$npm_package_name.$npm_package_version.css.map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyloJorgensen/Weather-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KyloJorgensen/Weather-App/issues"
+  },
+  "homepage": "https://github.com/KyloJorgensen/Weather-App#readme",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "less": "^2.7.1"
+  }
+}
