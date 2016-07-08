@@ -1,9 +1,9 @@
+package.json
 less-css
 webpack-js
 css/weather-app.1.0.0.css
 css/weather-app.1.0.0.css.map
 webpack.config.js
-package.json
 node_modules/babel-core
 node_modules/babel-loader
 node_modules/babel-preset-es2015
