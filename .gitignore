@@ -8,3 +8,4 @@ node_modules/babel-preset-es2015
 node_modules/webpack
 node_modules/less
 node_modules/chokidar-cli
+*/.bin
