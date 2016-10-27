@@ -1,15 +1,1 @@
-package.json
-less-css
-webpack-js
-css/weather-app.1.0.0.css
-css/weather-app.1.0.0.css.map
-webpack.config.js
-node_modules/babel-core
-node_modules/babel-loader
-node_modules/babel-preset-es2015
-node_modules/webpack
-node_modules/less
-node_modules/less-plugin-clean-css
-node_modules/uglify-js
-node_modules/chokidar-cli
-*/.bin
+node_modules

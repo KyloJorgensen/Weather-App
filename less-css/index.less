@@ -1,0 +1,181 @@
+body {
+	background-color: #3C4A90;
+}
+
+.container {
+	width: 1200px;
+	position:absolute;
+  	left:50%;
+  	transform: translateX(-50%);
+  	-webkit-transform: translateX(-50%);
+	background-color: #939393;
+	border: 0px solid black;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+header {
+	margin-bottom: 10px;
+}
+
+.input-form {
+	margin: 10px auto;
+	margin-top: 25px;
+	width: 400px;
+}
+
+input {
+	margin-top: 10px;
+	height: 42px;
+    width: 400px;
+    font-size: 32px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.today > * {
+	display: inline-block;
+}
+
+img,
+button {
+	border: 0px solid black;
+    border-radius: 15px;
+}
+
+.current-weather-img {
+	height: 100px;
+}
+
+h1,
+h3 {
+	margin: 5px;
+}
+
+main {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+	}
+}
+
+.referance {
+	width: 8%;
+}
+
+.temporary {
+	width: 3.8%;
+}
+
+.hour-img {
+	width: 100%;
+}
+
+main p {
+	margin-bottom: 0;
+	-webkit-padding-start: 0px;
+}
+
+footer {
+	padding-top: 15px;
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: inline-block;
+	}
+}
+
+
+button {
+	height: 32px;
+	width: 80px;
+	margin: 5px;
+
+}
+
+@media screen and (max-width:1225px){
+  	.container {
+      	width: 943px;
+   	}
+
+   	main {
+	   	ul {
+	   		display: inline-block;
+	   		-webkit-margin-before: 0em;
+	    	-webkit-margin-after: 0em;
+	    	-webkit-margin-start: 0px;
+	    	-webkit-margin-end: 0px;
+	    	-webkit-padding-start: 0px;
+		}
+
+		li {
+			display: list-item;
+		}
+		li > * {
+			margin-left: 40px;
+		}
+   	}
+
+	.referance {
+		width: auto;
+	}
+
+	.temporary {
+		width: auto;
+		text-align: right;
+	}
+
+	.hour-img {
+		width: 39px;
+	}
+
+	p {
+		font-size: 37px;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width:978px){
+	.container {
+      	width: 582px;
+   	}
+   	.hour-img {
+		width: 18px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width:582px){
+	.container {
+      	width: 320px;
+   	}
+
+   	h1,
+	h3 {
+		font-size: 80%;
+	}
+
+	input{
+		width: 315px;
+	}
+	
+	.humidity {
+		display: none;
+	}
+
+	main li > * {
+		margin-left: 2px;
+	}
+
+}
