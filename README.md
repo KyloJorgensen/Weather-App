@@ -18,5 +18,8 @@ Java script file is full of Javascript libaraies called modules that are complie
 babel-core, babel-loader, babel-preset-es2015, chokidar-cli, jquery, less, less-plugin-clean-css, uglify-js, and webpack
 
 # SCREENSHOTS
-## Main Page
-![Main Page]()
+## Day Time
+![Day Time](https://raw.githubusercontent.com/KyloJorgensen/Weather-App/master/screenshots/Screen%20Shot%202016-10-28%20at%2012.06.11%20PM.png)
+
+## Night Time
+![Night Time](https://raw.githubusercontent.com/KyloJorgensen/Weather-App/master/screenshots/Screen%20Shot%202016-10-28%20at%2012.06.34%20PM.png)
