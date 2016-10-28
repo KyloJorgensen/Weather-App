@@ -11,7 +11,7 @@ This is an active demo of website hosted by a server.
 
 The front-end is built using jQuery is a MVC style.
 
-Java script file is full of Javascript libaraies called modules that are complied to one file with Webpack and Node package Manager. 
+Javascript file is full of Javascript libraries called modules that are complied to one file with Webpack and Node package Manager. 
 
 ## Modules:
 	
